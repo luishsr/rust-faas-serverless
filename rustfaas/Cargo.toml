@@ -1,0 +1,15 @@
+[package]
+name = "rustfaas"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.12", features = ["macros", "fs", "rt-multi-thread"] }
+warp = "0.3.6"
+futures = { version = "0.3", default-features = false }
+bytes = "1.0"
+libloading = "0.8.1"
+hyper = "0.14.27"
+multipart = "0.17"
